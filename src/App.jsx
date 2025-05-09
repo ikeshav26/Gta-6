@@ -138,7 +138,7 @@ const App = () => {
               <h3 className='text-4xl text-white'>ROCKSTAR</h3>
             </div>
           </div>
-          <div className='text text-[9rem] lg:text-[12rem] flex flex-col gap-10 absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white z-[10] -rotate-[10deg] scale-[1.8]'>
+          <div className='text text-[9rem] lg:text-[12rem] flex flex-col gap-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white z-[10] -rotate-[10deg] scale-[1.8]'>
             <h1 className='-ml-30 leading-none'>grand</h1>
             <h1 className='ml-30 leading-none'>theft</h1>
             <h1 className='-ml-30 leading-none'>auto</h1>
@@ -148,6 +148,20 @@ const App = () => {
             <img className='bg scale-[1.7] -rotate-[3deg] bg-cover h-full w-full absolute top-0 left-0' src="./bg.png"/>
             <img className='girl absolute -bottom-[70%] left-1/2 bg-cover h-full scale-[1.8] -rotate-[15deg] -translate-x-1/2 z-[11]' src="./girlbg.png"/>
           </div>
+          <div className='w-full h-screen bg-black flex items-center justify-center'>
+          <div className='container w-full h-[80%]  p-10 flex items-center justify-center'>
+          <div className='left w-1/2 relative h-full'>
+           <img src="./imag.png" className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'/>
+          </div>
+          <div className='right text-white w-1/2 flex flex-col items-center justify-center'>
+            <h1 className='text-7xl'>Still Running</h1>
+            <h1 className='text-7xl'>Not Hunting</h1>
+            <p className='font-[Helvetica_Now_Display] mt-10 text-2xl'>Welcome to the official GTA 6 Download Page!</p>
+            <p className='font-[Helvetica_Now_Display] mt-3 text-xl'>Get ready to experience the most immersive and expansive Grand Theft Auto game ever created. Whether you're exploring the streets of Vice City or completing high-stakes missions, GTA 6 delivers an unforgettable open-world experience.</p>
+            <button className='bg-yellow-500 px-10 py-10 text-black mt-10 rounded-full text-3xl cursor-pointer'>DOWNLOAD NOW</button>
+          </div>
+          </div>
+        </div>
           <div className='btmbar z-[12] flex items-center absolute w-full h-20 bottom-0 left-0 py-15 px-10 bg-gradient-to-t from-black to-transparent '>
             <div className='flex gap-3 items-center text-white'>
               <i className='ri-arrow-down-line text-3xl'></i>
@@ -156,21 +170,7 @@ const App = () => {
             <img src="./ps5.png" className="absolute h-[55px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
           </div>
         </div>
-        <div className='w-full h-screen bg-black flex items-center justify-center'>
-          <div className='container w-full h-[80%]  p-10 flex items-center justify-center'>
-          <div className='left w-1/2 relative h-full'>
-           <img src="./imag.png" className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'/>
-          </div>
-          <div className='right text-white w-1/2 flex flex-col items-center justify-center'>
-            <h1 className='text-7xl'>Still Running</h1>
-            <h1 className='text-7xl'>Not Hunting</h1>
-            <p className='font-[Helvetica_Now_Display] mt-10 text-xl'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae laborum commodi nesciunt eligendi atque nostrum minima esse animi sequi maxime maiores aliquam laudantium, deleniti alias impedit pariatur aut error accusantium.
-            Soluta omnis magni, consequatur eveniet, nulla, ducimus laboriosam eaque suscipit cupiditate nobis sit porro? Aliquam eaque, ducimus amet voluptatem expedita porro delectus ad eius laudantium officia aut adipisci nisi enim!</p>
-            <p className='font-[Helvetica_Now_Display] mt-3 text-xl'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, qui. Magnam id eos minima a illum esse voluptate dolorum ullam saepe, maxime laudantium ipsum velit nobis quo quasi error odit.</p>
-            <button className='bg-yellow-500 px-10 py-10 text-black mt-10 rounded-full text-3xl'>DOWNLOAD NOW</button>
-          </div>
-          </div>
-        </div>
+        
       </div>}
     </>
   )
