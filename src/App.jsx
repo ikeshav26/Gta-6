@@ -35,6 +35,50 @@ const App = () => {
     if (showContent) {
       const main = document.querySelector(".main");
       if (main) {
+
+        gsap.to(".main",{
+          rotate:0,
+          scale:1,
+          duration:2,
+          delay:-1,
+          ease:"Expo.easeInOut"
+        }) 
+
+        gsap.to(".sky",{
+          rotate:0,
+          scale:1.1,
+          duration:2,
+          delay:-0.8,
+          ease:"Expo.easeInOut"
+        }) 
+
+        gsap.to(".bg",{
+          rotate:0,
+          scale:1.1,
+          duration:2,
+          delay:-0.8,
+          ease:"Expo.easeInOut"
+        })
+        
+        gsap.to(".girl",{
+          rotate:0,
+          scale:1.4,
+          duration:2,
+          bottom:"-25%",
+          x:"-50%",
+          delay:-0.8,
+          ease:"Expo.easeInOut"
+        })
+
+        gsap.to(".text",{
+          rotate:0,
+          scale:1,
+          duration:2,
+          delay:-0.8,
+          ease:"Expo.easeInOut"
+        })
+
+
         main.addEventListener("mousemove", function(dets) {
           const xMove=(dets.clientX/window.innerWidth-.5)*40;
           gsap.to(".text",{
@@ -82,8 +126,8 @@ const App = () => {
           />
         </svg>
       </div>
-      {showContent && <div className='main w-full'>
-        <div className='landing w-full h-screen bg-black'>
+      {showContent && <div className='main w-full -rotate-[10deg] scale-[1.7]'>
+        <div className='landing  w-full h-screen bg-black'>
           <div className='navbar w-full h-20 z-[10] absolute top-0 p-10'>
             <div className='logo flex gap-7 items-center'>
               <div className='lines flex flex-col gap-1'>
@@ -94,15 +138,15 @@ const App = () => {
               <h3 className='text-4xl text-white'>ROCKSTAR</h3>
             </div>
           </div>
-          <div className='text text-[9rem] lg:text-[12rem] flex flex-col gap-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white z-[10]'>
+          <div className='text text-[9rem] lg:text-[12rem] flex flex-col gap-10 absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white z-[10] -rotate-[10deg] scale-[1.8]'>
             <h1 className='-ml-30 leading-none'>grand</h1>
             <h1 className='ml-30 leading-none'>theft</h1>
             <h1 className='-ml-30 leading-none'>auto</h1>
           </div>
           <div className='imagesdiv w-full h-screen relative overflow-hidden'>
-            <img className='sky scale-[1.2] bg-cover h-full w-full absolute top-0 left-0' src="./sky.png"/>
-            <img className='bg scale-[1.2] bg-cover h-full w-full absolute top-0 left-0' src="./bg.png"/>
-            <img className=' absolute -bottom-[25%] left-1/2 bg-cover h-full scale-[1.4] -translate-x-1/2 z-[11]' src="./girlbg.png"/>
+            <img className='sky scale-[1.7] -rotate-[30deg] bg-cover h-full w-full absolute top-0 left-0' src="./sky.png"/>
+            <img className='bg scale-[1.7] -rotate-[3deg] bg-cover h-full w-full absolute top-0 left-0' src="./bg.png"/>
+            <img className='girl absolute -bottom-[70%] left-1/2 bg-cover h-full scale-[1.8] -rotate-[15deg] -translate-x-1/2 z-[11]' src="./girlbg.png"/>
           </div>
           <div className='btmbar z-[12] flex items-center absolute w-full h-20 bottom-0 left-0 py-15 px-10 bg-gradient-to-t from-black to-transparent '>
             <div className='flex gap-3 items-center text-white'>
