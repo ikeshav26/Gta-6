@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import "remixicon/fonts/remixicon.css";
 
 const App = () => {
   const [showContent, setShowContent] = useState(false)
@@ -61,6 +62,37 @@ const App = () => {
             />
           </svg>
         </div>
+        {showContent && <div className='main w-full '>
+          <div className='landing w-full h-screen bg-black'>
+            <div className='navbar w-full h-20 z-[10] absolute top-0 p-10'>
+              <div className='logo flex gap-7 items-center'>
+                <div className='lines flex flex-col gap-1'>
+                  <div className='h-1 bg-white w-10'></div>
+                  <div className='h-1 bg-white w-7'></div>
+                  <div className='h-1 bg-white w-4'></div>
+                </div>
+                <h3 className='text-4xl text-white'>ROCKSTAR</h3>
+              </div>
+            </div>
+            <div className='text text-[9rem] lg:text-[12rem] flex flex-col gap-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white z-[10]'>
+              <h1 className='-ml-30 leading-none'>grand</h1>
+              <h1 className='ml-30 leading-none'>theft</h1>
+              <h1 className='-ml-30 leading-none'>auto</h1>
+            </div>
+            <div className='imagesdiv w-full h-screen relative overflow-hidden'>
+              <img className='bg-cover h-full w-full absolute top-0 left-0' src="./sky.png"/>
+              <img className='bg-cover h-full w-full absolute top-0 left-0' src="./bg.png"/>
+              <img className=' absolute -bottom-[25%] left-1/2 bg-cover h-full scale-[1.4] -translate-x-1/2 z-[11]' src="./girlbg.png"/>
+            </div>
+            <div className='btmbar z-[12] flex items-center absolute w-full h-20 bottom-0 left-0 py-15 px-10 bg-gradient-to-t from-black to-transparent '>
+              <div className='flex gap-3 items-center text-white'>
+                <i className='ri-arrow-down-line text-3xl'></i>
+                <h3 className='font-[Helvetica_Now_Display] text-lg'>Scroll Down</h3>
+                </div>
+                <img src="./ps5.png" className="absolute h-[55px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+            </div>
+          </div>
+          </div>}
     </>
   )
 }
