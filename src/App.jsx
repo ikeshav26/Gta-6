@@ -112,6 +112,21 @@ const App = () => {
             <img src="./ps5.png" className="absolute h-[55px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
           </div>
         </div>
+        <div className='w-full h-screen bg-black flex items-center justify-center'>
+          <div className='container w-full h-[80%]  p-10 flex items-center justify-center'>
+          <div className='left w-1/2 relative h-full'>
+           <img src="./imag.png" className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'/>
+          </div>
+          <div className='right text-white w-1/2 flex flex-col items-center justify-center'>
+            <h1 className='text-7xl'>Still Running</h1>
+            <h1 className='text-7xl'>Not Hunting</h1>
+            <p className='font-[Helvetica_Now_Display] mt-10 text-xl'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae laborum commodi nesciunt eligendi atque nostrum minima esse animi sequi maxime maiores aliquam laudantium, deleniti alias impedit pariatur aut error accusantium.
+            Soluta omnis magni, consequatur eveniet, nulla, ducimus laboriosam eaque suscipit cupiditate nobis sit porro? Aliquam eaque, ducimus amet voluptatem expedita porro delectus ad eius laudantium officia aut adipisci nisi enim!</p>
+            <p className='font-[Helvetica_Now_Display] mt-3 text-xl'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, qui. Magnam id eos minima a illum esse voluptate dolorum ullam saepe, maxime laudantium ipsum velit nobis quo quasi error odit.</p>
+            <button className='bg-yellow-500 px-10 py-10 text-black mt-10 rounded-full text-3xl'>DOWNLOAD NOW</button>
+          </div>
+          </div>
+        </div>
       </div>}
     </>
   )
